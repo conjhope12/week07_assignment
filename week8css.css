@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Everything above is the reset tool. I decided to use it because I started this css file from scratch. */
+
+/* Changing the font within the html section will ensure every text on that page will be the same font. */
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: rgba(128, 0, 128, 0.253);
+}
+
+/* Since these html pages are small, I've decided to have the margin be at zero for easy reading. */
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* All "navbar" content listed below is was made to create a space for other links for the website to rest upon.
+>> I used the resest CSS formula to help fill in the margins at the top of the website.
+>> The links within the navbar change colors when someone hovers over the button itself. */
+
+.navbar {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    flex-grow: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: green;
+}
+
+/* All "img" elements are the same for every page.
+>> Using margin left/right: auto helps center the images perfectly.
+>> I added a box shadow for the images too.
+>> I used flex wrap agin to keep the images in there place, not matter the pixcel count. */
+
+.img-home-div {
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+.h2-home-div{
+    text-align: center;
+}
+
+.form-home-div {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-btn {
+    background-color: green;
+}
+
+.submit-btn:hover {
+    background-color: red;
+}
+
+.img-sith-div {
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* For any other headers displayed on most pages, I threw a box around using the background-color and appropriate padding parameters. */
+
+.h2-h4-div {
+    text-align: center;
+    color: rgb(197, 58, 16);
+    padding: 1rem 2rem;
+    background-color: rgb(0, 58, 66);
+    border-radius: 1rem;
+}
+
+/* I used "border" to help establish lines throughout the table.
+>> The width helped knock down the weird empty space within the table. */
+
+.table-sith-div ,table ,th ,td{
+    border: 1px solid;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 30%;
+    
+}
+
+.img-jedi-div {
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.h2-h3-div {
+    text-align: center;
+    margin: 0;
+    color: black;
+    padding: 1rem 2rem;
+    background-color: rgb(52, 197, 16);
+    border-radius: 1rem;
+}
+
+/* The "max-width" elemnt helps the list to expand past 800 px. */
+
+.ol-jedi-div {
+    max-width: 800px;
+    margin: 0;
+    color: rgb(52, 197, 16);
+    padding: 1rem 2rem;
+    background-color: rgb(0, 58, 66);
+    border-radius: 1rem;
+    text-align: center;
+}

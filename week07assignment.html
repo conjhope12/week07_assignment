@@ -3,41 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Star Warz</title>
+
+    <link rel = "stylesheet" href = "week8css.css">
 </head>
 <body>
-    
+<main>
+    <nav class="navbar">
+        <h1> Star WarZ </h1>
+        <ul>
+           <li> <a href="sith.html">The Sith</a> </li>
+           <li> <a href="jedi.html">The Jedi</a> </li>
+        </ul>
+    </nav>
+
     <h1>Average Star Wars Enthusiast Homepage</h1>
 
-    <div>
-        <a href="sith.html">The Sith</a> <br>
-        <a href="jedi.html">The Jedi</a> <br>
+<section>
+
+    <div class = "img-home-div">
+        <img id = "coolest img" src="https://static.wikia.nocookie.net/starwars/images/8/8e/LightsaberCSWE.jpg/revision/latest/scale-to-width-down/1200?cb=20130702064305" width="500" height="300px" alt="The coolest pic of all time."> 
     </div>
 
-    <img src="https://static.wikia.nocookie.net/starwars/images/8/8e/LightsaberCSWE.jpg/revision/latest/scale-to-width-down/1200?cb=20130702064305" width="500" height="300px" alt="The coolest pic of all time."> 
+</section>
 
-    <h2>Do you have the force?</h2>
-
+    
+    
 <!--See comments for the above parameters on jedi.html.-->
 
 <!--<form> and <input> are used to make content where users can interact with different prompts
     >> type="text" was used for text boxes for users to fill in their info to.
     >> type="radio" was used to make multiple choice answers.-->
+<section>
+    <div class = "h2-home-div">
+            <h2>Do you have the force?</h2> <br>
 
-    <form>
-        <input type="text" name="firstName" placeholder="First Name"> <br>
-        <input type="text" name="lastName" placeholder="Last Name"> <br><br>
-        What side of the force are you on? <br>
-        <input type="radio" name="forceSide" value="Jedi"> Jedi <br>
-        <input type="radio" name="forceSide" value="Sith"> Sith <br>
-        <input type="radio" name="forceSide" value="Other"> Other <br><br>
-        If you could be any force user, who would you be? <br>
-        <input type="text" name ="forceUser" placeholder="Force User"> <br>
-        <input type="submit" value="Submit"> <br>
-    </form> <br>
-
+        <div class = "form-home-div">
+        <form>
+            <input type="text" name="firstName" placeholder="First Name"> <br>
+            <input type="text" name="lastName" placeholder="Last Name"> <br><br>
+            <p>What side of the force are you on? </p> <br>
+            <input type="radio" name="forceSide" value="Jedi"> Jedi <br>
+            <input type="radio" name="forceSide" value="Sith"> Sith <br>
+            <input type="radio" name="forceSide" value="Other"> Other <br><br>
+            <p>If you could be any force user, who would you be? </p> <br><br>
+            <input type="text" name ="forceUser" placeholder="Force User"> <br>
+        </form> <br>
+        </div>
+            <div>
+                <button class="submit-btn">Submit</button> <br>
+            </div>
+    </div>
+</section>
 <!--<button> allows me to make buttons apear in the html file.-->
     <button>Click me!</button>
 
+</main>
 </body>
 </html>
